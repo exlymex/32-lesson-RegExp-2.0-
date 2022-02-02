@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.user__box,.user__full__list{
+    width: 48%;
+}
+
+input{
+    height: 26px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 3px;
+    width: 100%;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #6098d4;
+    box-shadow: 0 0 10px #719ECE;
+}
+.user__list{
+    margin-top: 20px;
+    display: flex;
+}
+
+li{
+    margin-left: 15px;
+   width: 80%;
+   list-style: none;
+}
+p{
+    margin-top: 20px;
+}
+.user__box{
+    margin-left: 150px;
+}
+#edit__user,#delete__user{
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 0px;
+    font-size: 17px;
+    border-radius: 4px;
+    background-color: lightsalmon;
+}
+#delete__user{
+    background-color:rgb(230, 126, 115)
+}

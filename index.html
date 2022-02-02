@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="user__box">
+            <form>
+                <div class="login__box">
+                    <p>Login</p>
+                    <input type="text" name="" id="login__input" placeholder="Enter login" required pattern="/^[a-zA-Z0-9_-]{2,15}$/" >
+                </div>
+                <div class="password__input">
+                    <p>Password</p>
+                    <input type="password" name="" id="password__input" placeholder="Enter password" required pattern="/^[a-zA-Z0-9_-]{6,15}$/">
+                </div>
+                <div class="email__input">
+                    <p>Email</p>
+                    <input type="text" name="" id="email__input" placeholder="Enter email" required pattern="/^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
+                </div>
+                <div class="button__box">
+                    <button type="submit" id = 'add__user'>Add user</button>
+                </div>
+            </form>
+        </div>
+        <div class="user__full__list" id="user__full__list">
+            <ul class = 'user__list'>
+                <li>#</li>
+                <li>Login</li>
+                <li>Password</li>
+                <li>Email</li>
+                <li>Edit</li>
+                <li>Delete</li>
+            </ul>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
